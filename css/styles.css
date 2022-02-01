@@ -59,3 +59,9 @@ main{
     -o-transform: scale(1.05);
     background: rgb(69, 66, 228);
 }
+.playerContainer--mid{
+    justify-content: space-around;
+}
+.win, .lose{
+    display: block;
+}

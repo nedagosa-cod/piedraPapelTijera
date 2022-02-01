@@ -14,29 +14,35 @@
                 <figure>
                     <img src="https://cdn-icons.flaticon.com/png/512/2229/premium/2229934.png?token=exp=1643753372~hmac=048829245295a7626946a47fb7f7a78f" alt="Imagen de piedra">
                 </figure>
-                <button class="playerContainer__primaryButton">Papel</button>
+                <button class="playerContainer__primaryButton" onclick="nombreBoton1('Piedra')">Piedra</button>
             </div>
             <div class="playerContainer__element">
                 <figure>
                     <img src="https://cdn-icons.flaticon.com/png/512/5833/premium/5833963.png?token=exp=1643753482~hmac=d5b85fd179fd68f38716e800dad8041f" alt="Imagen de papel">
                 </figure>
-                <button class="playerContainer__primaryButton">Papel</button>
+                <button class="playerContainer__primaryButton" onclick="nombreBoton1('Papel')">Papel</button>
             </div>
             <div class="playerContainer__element">
                 <figure>
                     <img src="https://cdn-icons.flaticon.com/png/512/5754/premium/5754289.png?token=exp=1643753525~hmac=3be17e0303fc5e98b39229ae10c4f07d" alt="Imagen de piedra">
                 </figure>
-                <button class="playerContainer__primaryButton">Tijera</button>
+                <button class="playerContainer__primaryButton" id="btn-tijera" onclick="nombreBoton1('Tijera')">Tijera</button>
             </div>
         </section>
 
-        <section class="playerContainer">
+        <section class="playerContainer playerContainer--mid">
             <div>
-                <h1>Ganaste</h1>
+                <div class="win" id="gano">
+                    <h1>Ganaste</h1>
+                </div>
+                <div class="lose" id="perdio">
+                    <h1>Perdiste</h1>
+                </div>
+                <div class="lose" id="empate">
+                    <h1>Empate</h1>
+                </div>
             </div>
-            <div>
-                <h1>Perdiste</h1>
-            </div>
+            <button onclick="resultado(elementoUno, elementoDos)">Jugar!</button> 
         </section>
 
         <section class="playerContainer">
@@ -44,19 +50,19 @@
                 <figure>
                     <img src="https://cdn-icons.flaticon.com/png/512/2229/premium/2229934.png?token=exp=1643753372~hmac=048829245295a7626946a47fb7f7a78f" alt="Imagen de piedra">
                 </figure>
-                <button class="playerContainer__primaryButton">Papel</button>
+                <button class="playerContainer__primaryButton" onclick="nombreBoton2('Piedra')">Piedra</button>
             </div>
             <div class="playerContainer__element">
                 <figure>
                     <img src="https://cdn-icons.flaticon.com/png/512/5833/premium/5833963.png?token=exp=1643753482~hmac=d5b85fd179fd68f38716e800dad8041f" alt="Imagen de papel">
                 </figure>
-                <button class="playerContainer__primaryButton">Papel</button>
+                <button class="playerContainer__primaryButton" onclick="nombreBoton2('Papel')">Papel</button>
             </div>
             <div class="playerContainer__element">
                 <figure>
                     <img src="https://cdn-icons.flaticon.com/png/512/5754/premium/5754289.png?token=exp=1643753525~hmac=3be17e0303fc5e98b39229ae10c4f07d" alt="Imagen de piedra">
                 </figure>
-                <button class="playerContainer__primaryButton">Tijera</button>
+                <button class="playerContainer__primaryButton" onclick="nombreBoton2('Tijera')">Tijera</button>
             </div>
         </section>
     </main>
