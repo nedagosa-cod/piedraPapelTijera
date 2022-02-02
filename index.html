@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <title>Piedra, Papel, Tijera</title>
 </head>
 <body>
     <main>
         <section class="playerContainer">
+            <h2>JUGADOR 1</h2>
             <div class="playerContainer__element">
                 <figure>
                     <img src="https://cdn-icons.flaticon.com/png/512/2229/premium/2229934.png?token=exp=1643753372~hmac=048829245295a7626946a47fb7f7a78f" alt="Imagen de piedra">
@@ -42,27 +46,28 @@
                     <h1>Empate</h1>
                 </div>
             </div>
-            <button onclick="resultado(elementoUno, elementoDos)">Jugar!</button> 
+            <button class="play-button" onclick="resultado(elementoUno, elementoDos)">Jugar!</button> 
         </section>
 
         <section class="playerContainer">
+            <h2>JUGADOR 2</h2>
             <div class="playerContainer__element">
                 <figure>
                     <img src="https://cdn-icons.flaticon.com/png/512/2229/premium/2229934.png?token=exp=1643753372~hmac=048829245295a7626946a47fb7f7a78f" alt="Imagen de piedra">
                 </figure>
-                <button class="playerContainer__primaryButton" onclick="nombreBoton2('Piedra')">Piedra</button>
+                <button class="playerContainer__secondButton" onclick="nombreBoton2('Piedra')">Piedra</button>
             </div>
             <div class="playerContainer__element">
                 <figure>
                     <img src="https://cdn-icons.flaticon.com/png/512/5833/premium/5833963.png?token=exp=1643753482~hmac=d5b85fd179fd68f38716e800dad8041f" alt="Imagen de papel">
                 </figure>
-                <button class="playerContainer__primaryButton" onclick="nombreBoton2('Papel')">Papel</button>
+                <button class="playerContainer__secondButton" onclick="nombreBoton2('Papel')">Papel</button>
             </div>
             <div class="playerContainer__element">
                 <figure>
                     <img src="https://cdn-icons.flaticon.com/png/512/5754/premium/5754289.png?token=exp=1643753525~hmac=3be17e0303fc5e98b39229ae10c4f07d" alt="Imagen de piedra">
                 </figure>
-                <button class="playerContainer__primaryButton" onclick="nombreBoton2('Tijera')">Tijera</button>
+                <button class="playerContainer__secondButton active-button" onclick="nombreBoton2('Tijera')">Tijera</button>
             </div>
         </section>
     </main>
