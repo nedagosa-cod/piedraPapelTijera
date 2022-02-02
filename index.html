@@ -46,7 +46,13 @@
                     <h1>Empate</h1>
                 </div>
             </div>
-            <button class="play-button" onclick="resultado(elementoUno, elementoDos)">Jugar!</button> 
+            <div>
+                <span>Com sacó <h3 id="eleccionCom">-</h3> y tu <h3 id="eleccionPl">-</h3></span>
+            </div>
+            <div class="playerContainer__wrapButtons">
+                <button class="play-button" id="play-button" onclick="resultado(elementoUno, elementoDos)">Vs Player</button> 
+                <button class="play-buttonCom" id="play-buttonCom" onclick="versusCom(elementoUno)">Vs Com</button> 
+            </div>
         </section>
 
         <section class="playerContainer">

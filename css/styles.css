@@ -24,6 +24,17 @@ main{
     width: 12rem;
     height: 3rem;
 }
+.play-buttonCom{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background: rgb(255, 0, 0);
+    color: white;
+    width: 12rem;
+    height: 3rem;
+}
 .playerContainer{
     width: 33%;
     height: 60rem;
@@ -38,6 +49,12 @@ main{
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+}
+.playerContainer__wrapButtons {
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+    justify-content: space-around;
 }
 .playerContainer h1{
     font-size: 6rem;
@@ -107,6 +124,9 @@ main{
 }
 .playerContainer--mid{
     justify-content: space-around;
+}
+.playerContainer--mid  span{
+    font-size: 3rem;
 }
 .win, .lose{
     color: rgba(0, 0, 0, 0.1);
